@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Payment Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="theFather">
+        <div id="header">
+            <h1 id="heading">I Peperoni Piccanti</h1>
+
+            <div id="nav">
+                <ul id="navItems">
+                    <li class="navItem"><a class="navLinks" href="" target="_blank">Home</a></li>
+                    <li class="navItem"><a class="navLinks" href="" target="_blank">Menu</a></li>
+                    <li class="navItem"><a class="navLinks" href="" target="_blank">Order Form</a></li>
+                    <li class="navItem"><a class="navLinks" href="" target="_blank">About Us</a></li>
+                    <li class="navItem"><a class="navLinks" href="" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="middle">
+
+            <div id="form">
+                <form>
+                    <h1 class="orderHeading">Order your Pizza(s): </h1>
+                    <div id="theSmallerFather">
+                        <div class="formItems1">
+                            <fieldset id="bInfo">
+                                <legend class="leg">
+                                    <h2 class="legh">Billing Info (required)</h2>
+                                </legend>
+                                <label for="fname">First Name: </label>
+                                <input type="text" id="fname" name="firstName" placeholder="First Name" required>
+                                <br><br>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" name="lastName" placeholder="Last Name" required>
+                                <br><br>
+                                <label for="adr">Street Address: </label>
+                                <input type="text" id="adr" name="address" placeholder="Address" required>
+                                <br><br>
+                                <label for="adr2">Street Address 2 (optional): </label>
+                                <input type="text" id="adr2" name="address2" placeholder="Address 2">
+                                <br><br>
+                                <label for="city">City: </label>
+                                <input type="text" id="city" name="city" placeholder="City" required>
+                                <br><br>
+                                <label for="state">State: </label>
+                                <input type="text" id="state" name="state" placeholder="State" required>
+                                <br><br>
+                                <label for="zCode">Zip Code: </label>
+                                <input type="number" id="zCode" name="zip code" placeholder="Zip Code" required>
+                                <br><br>
+                                <label for="cntry">Country: </label>
+                                <input type="text" id="cntry" name="country" placeholder="Country" required>
+                                <br><br>
+                                <label for="phone">Phone Number: </label>
+                                <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+                                <br><br>
+                                <label for="quant">Number of Pizzas to Order (1 to 100) </label>
+                                <input type="range" id="quant" name="quantity" min="1" max="100">
+
+                            </fieldset>
+                        </div>
+                        <br>
+                        <div class="formItems">
+                            <fieldset id="cCard">
+                                <legend class="leg">
+                                    <h2 class="legh">Credit Card (required)</h2>
+                                </legend>
+                                <input type="radio" id="amExpress" name="americanExpress"
+                                    placeholder="American Express">
+                                <label for="amExpress">American Express <i class="fa fa-cc-amex"></i></label>
+                                <br>
+                                <input type="radio" id="disc" name="discover" placeholder="Discover Card">
+                                <label for="disc">Discover <i class="fa fa-cc-discover"></i></label>
+                                <br>
+                                <input type="radio" id="master" name="masterCard" placeholder="Master Card">
+                                <label for="master">Master Card <i class="fa fa-cc-mastercard"></i></label>
+                                <br>
+                                <input type="radio" id="visa" name="visa" placeholder="VISA">
+                                <label for="visa">VISA <i class="fa fa-cc-visa"></i></label>
+                                <br><br>
+                                <label for="cNum">Credit Card Number: </label>
+                                <input type="number" id="cNum" name="creditNumber" placeholder="#" required>
+                                <br><br>
+                                <label for="exDate">Expiration Date: </label>
+                                <input type="date" id="exDate" name="expirationDate">
+                            </fieldset>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footerItems">
+                <h2>Follow Us on Social Media</h2>
+                <p>Facebook</p><a href="#" class="fa fa-facebook"></a>
+                <p>Twitter</p><a href="#" class="fa fa-twitter"></a>
+                <p>Youtube</p><a href="#" class="fa fa-youtube"></a>
+                <p>Instagram</p><a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="footerItems">
+                <br><br><br><br><br><br><br><br>
+                <p>2022</p>
+                <p>All Rights Reserved &copy;</p>
+            </div>
+            <div class="footerItems"> <!--Links dont actually work-->
+                <h2>Locations</h2>
+                <a href="#" class="locationLinks">Peoria</a><br><br>
+                <a href="#" class="locationLinks">Glendale</a><br><br>
+                <a href="#" class="locationLinks">Mesa</a><br><br>
+                <a href="#" class="locationLinks">Gilbert</a><br><br>
+                <a href="#" class="locationLinks">Tempe</a><br><br>
+                <a href="#" class="locationLinks">Camp Verde</a><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
